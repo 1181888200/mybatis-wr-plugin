@@ -98,6 +98,7 @@ public class MybatisConfig {
 		// fb.setTypeAliasesPackage(env.getProperty("mybatis.typeAliasesPackage"));
 		// fb.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(env.getProperty("mybatis.mapperLocations")));
 
+		//这个地方要注意：这个地方就是把我们自己实现的过滤器，也是主从库切换主要逻辑
 		Interceptor[] plugins = { new RouteDataSourcePlugin() };
 		fb.setPlugins(plugins);
 
