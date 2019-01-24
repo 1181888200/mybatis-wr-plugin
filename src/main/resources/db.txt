@@ -1,0 +1,9 @@
+-- 首先我们在本地创建test_master主库  和 test_slave从数据库
+-- 在各自里面创建数据表
+CREATE TABLE `test_user` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `sex` varchar(255) DEFAULT NULL,
+  `job` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
